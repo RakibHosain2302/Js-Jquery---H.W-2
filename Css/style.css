@@ -44,7 +44,7 @@ aside{
     position: fixed;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-    transition: 0.65s;
+    transition: 0.7s;
     opacity: 0;
     visibility: visible; 
     transform: translateX(-100%); 
@@ -56,7 +56,7 @@ aside{
 .active{
     opacity: 1;
     transform: translateX(0);
-    transition: 0.9s;
+    transition: 0.5s;
     visibility: visible;
    
 }
@@ -67,7 +67,6 @@ aside ul li{
     margin-top: 30px;
     text-align: left;
     font-weight: 600;
-    transition: 0.5s ;
   
 }
 
@@ -347,7 +346,7 @@ section{
  .signeture svg{
     stroke-dasharray: 330;
     stroke-dashoffset: 330;
-    animation: signeture 10s linear  3 forwards;
+    animation: signeture 2.5s linear  3 forwards;
 }
 
 
