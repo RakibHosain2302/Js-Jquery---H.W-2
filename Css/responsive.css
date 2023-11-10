@@ -1,0 +1,21 @@
+
+@media (min-width:320px) and (max-width:991px){
+    .signeture svg{
+    margin-left: -50px;
+   }
+
+   .side {
+    height: 160vh;
+    width: 126%;
+}
+
+aside {
+     height: 160vh;
+}
+
+.hero-cnt{
+    margin-top: 40px;
+}
+
+
+ }

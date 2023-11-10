@@ -1,0 +1,363 @@
+/* common css starts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* common css ends */
+
+
+/* navbar css */
+nav{
+    padding: 16px 0;
+    position: relative;
+}
+
+.side{
+    background-color: rgba(0, 0, 0, 0.3); 
+    height: 100vh;
+    position:absolute;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+aside{
+    width: 70%;
+    max-width: 350px;
+    height: 100vh;
+    padding: 70px 0;
+    position: fixed;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    transition: 0.65s;
+    opacity: 0;
+    visibility: visible; 
+    transform: translateX(-100%); 
+    
+}
+
+
+
+.active{
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.9s;
+    visibility: visible;
+   
+}
+
+
+
+aside ul li{
+    margin-top: 30px;
+    text-align: left;
+    font-weight: 600;
+    transition: 0.5s ;
+  
+}
+
+
+
+aside a{
+    display: block;
+    color: black;
+    font-size: 18px;
+    width: 60%;
+    font-family: Roboto Slab;
+    font-weight: 400;
+    text-transform: uppercase;
+    transition: 0.45s;
+    margin-left: 40px;
+   
+}
+
+aside i{
+    margin-right: 10px;
+}
+
+
+aside a:hover{
+    color: orangered;
+   
+}
+
+
+
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    width: 35px;
+}
+
+
+
+
+.profile .profile-img{
+    margin-left: 80px;
+    margin-top: -40px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.profile-img{
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.profile h1{
+    padding-top: 10px;
+    font-size: 26px;
+    text-align: center;
+    font-family: Roboto Slab;
+    margin-left: -18px;
+}
+
+.profile .info a{
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    color: blue;
+    margin-left: 25px;
+    text-transform: uppercase;
+
+    
+}
+
+.info span{
+    margin-left: -40px;
+    font-size: 16px;
+    font-family: Roboto Slab;
+
+}
+
+
+.hero-section{
+   height: 100vh;
+
+}
+
+.hero-cnt{
+    text-align: left;
+    margin-top: 40px;
+}
+
+.hero-cnt h1{
+   font-size: 68px;
+   font-family: Roboto Slab;
+   font-weight: 700;
+   color: black;
+   margin-top: 10%;
+}
+
+.hero-cnt h1 span{
+    color: #f74e38ea;
+}
+
+
+.hero-cnt p{
+    font-size: 16px;
+    font-family: Roboto Slab;
+    color:black;
+    margin-top: 1.5rem;
+}
+
+
+
+.hero-cnt .btn{
+    border: 2px solid #ff523b;
+    font-size: 20px;
+    font-family: Roboto Slab;
+    border-radius: 20px;
+    padding: 5px 35px;
+    /* background-color:#ff523b; */
+    margin-top: 20px;
+    transition: 0.35s;
+   
+}
+
+.hero-cnt .btn i{
+    margin-left: 10px;
+}
+
+
+.hero-cnt .btn:hover{
+    background-color: #ff523b14;
+    color: #ff523b;
+}
+
+
+.hero-img img {
+    margin-top: 0px;
+    margin-bottom: -80px;
+
+}
+
+
+/* hero section ends */
+
+
+
+
+/* navbar css ends */
+
+/* preloader css starts */
+
+
+/* .preloader{
+    margin-top: 100px;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.preloader .preloader-cnt{
+    width: 100px;
+    height: 100px;
+}
+
+
+
+.signature svg{
+    stroke-dasharray: 450;
+    stroke-dashoffset: 450;
+    animation: signature 5s linear 1 forwards;
+    
+}
+
+@keyframes signature {
+
+    0%{
+       stroke-dashoffset: 450;
+    }
+    100%{
+       stroke-dashoffset: 0;
+    }
+}  */
+
+
+/* preloader css ends */
+
+/* section css starts */
+
+section{
+    max-width: 800px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* section css ends */
+
+.preloader{
+    position: fixed;
+    inset: 0;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader_cnt{
+    width: 200px;
+    height: 100px;
+}
+
+/* .spinner{
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid red ;
+    border-right: 5px solid transparent;
+    border-radius: 50px;
+    animation: spinner 2s linear 5;
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+       transform: rotate(360deg); 
+    }
+} */
+/* 
+.google{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.google span{
+   width: 20px; 
+   height: 20px;
+   border-radius: 50%;
+   background-color: #CB4C3B;
+   display: block;
+   margin: 0 10px;
+   animation: google 0.85s linear infinite alternate forwards;
+}
+
+.google span:nth-child(2){
+    background-color: #E7BF04;
+    animation-delay: 0.25s;
+}
+.google span:nth-child(3){
+    background-color: #67A850;
+    animation-delay: 0.50s;
+}
+.google span:nth-child(4){
+    background-color: #5F7EF3;
+    animation-delay: 0.75s;
+}
+
+@keyframes google {
+
+    0%{
+        margin-top: 0;
+    }
+    100%{
+        margin-top: -50px;
+    }
+} */
+
+ .signeture svg{
+    stroke-dasharray: 330;
+    stroke-dashoffset: 330;
+    animation: signeture 10s linear  3 forwards;
+}
+
+
+ @keyframes signeture {
+    0%{
+        stroke-dashoffset: 330;
+    }
+    100%{
+        stroke-dashoffset: 0;
+    }
+ }
+
+
